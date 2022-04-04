@@ -4,12 +4,14 @@ import Uncle from '../Uncle/Uncle'
 import Aunty from '../Aunty/Aunty'
 import './GrandPa.css'
 
-export const RingContext = createContext('ring');
+
+export const GiftContext = createContext('ring');
+
 const GrandPa = () => {
     const house = 7;
-    const gift = "Diamond Ring"
+    const gift = ["Diamond Ring", "Gold Ring"]
     return (
-        <RingContext.Provider value={gift}>
+        <GiftContext.Provider value={gift}>
             <div className=' m-4 p-3 border'>
                 <h3>Grandpa</h3>
                 <p>I Have {house} House.</p>
@@ -19,8 +21,10 @@ const GrandPa = () => {
                     <Aunty house={house}></Aunty>
                 </div>
             </div>
+        </GiftContext.Provider>
 
-        </RingContext.Provider>
+
+
 
     );
 };
