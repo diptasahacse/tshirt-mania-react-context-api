@@ -14,6 +14,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <CustomLink  className='nav-link' to={'/'}>Home</CustomLink>
                             <CustomLink  className='nav-link' to={'/review'}>Order Review</CustomLink>
+                            <CustomLink  className='nav-link' to={'/grandpa'}>Grandpa</CustomLink>
                             
                         </Nav>
                     </Navbar.Collapse>

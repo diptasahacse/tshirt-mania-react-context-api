@@ -36,6 +36,16 @@ const Cart = ({cart,removeFromCart}) => {
                     cart.length !== 4 ? <p>Keep Adding</p> : <button>Remove All</button>
                 }
             </div>
+            <div>
+                {
+                    cart.length === 3 && <p>3 item in cart</p>
+                }
+            </div>
+            <div>
+                {
+                    cart.length === 0 || <p>4 item need to add in cart</p>
+                }
+            </div>
         </div>
     );
 };
